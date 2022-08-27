@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+/* ================================================= */
+
+.txt_h1{
+   font-style: normal;
+font-weight: 800;
+font-size: 72px;
+line-height: 85px;
+/* identical to box height */
+position: absolute;
+   top: 200px;
+   left: 900px;
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+background: linear-gradient(271.88deg, #3887FE 4.26%, #3BA0FF 51.37%, #5FB2FF 99.01%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+text-shadow: 0px 5px 12px rgba(6, 5, 19, 0.25);
+}
+.wrapper {
+   width: fit-content;
+   height: fit-content;
+   position: absolute;
+   left: 50px;
+   top: 130px;
+   background: linear-gradient(180deg, #1E1156 0%, rgba(28, 35, 64, 0) 100%);
+   color: white;
+   filter: drop-shadow(0px 25px 25px rgba(0, 3, 32, 0.5));
+   border-radius: 8px;
+}
+.register {
+   font-size: 48px;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 38px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.inp {
+   
+width: 380px;
+height: 58px;
+color: white;
+   border-radius: 10px;
+   padding: 10px 20px;
+   background: #2E3558;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+border-radius: 8px;  
+   outline: none;
+}
+
+.btn {
+   border: none;
+   border-radius: 10px;
+   padding: 15px 20px;
+   cursor: pointer;
+   background: linear-gradient(271.88deg, #3887FE 4.26%, #3BA0FF 51.37%, #5FB2FF 99.01%);
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+border-radius: 8px;
+color: white;
+width: 105px;
+height: 42px;
+cursor: pointer;
+margin-left: 210px;
+   margin-bottom: 32px;
+}
+
+
+.text_use{
+   position: relative;
+   bottom: 20px;
+   color: #6B7280;
+}
+.txt_lic{
+   display: flex;
+   gap: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.txt_lic a{
+   position: relative;
+   right: 15px;
+}
+.sign_in{
+   background: linear-gradient(88.43deg, #2F3453 11.5%, #242845 76.7%);
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+   border-radius: 8px;
+   color: #949EC0;
+   cursor: pointer;
+   width: 105px;
+   height: 42px;
+   position: absolute;
+   top: 495px;
+   left: 80px;
+}
+body{
+   background-color: #1C0F50;
+}
+.linw{
+   position: relative;
+   top: 320px;
+   left: 438px;
+}

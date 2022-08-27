@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <title>Swiper demo</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+   <link rel="stylesheet" href="./market.css">
+   
+   <!-- Link Swiper's CSS -->
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+ />
+   <!-- Demo styles -->
+   <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+         position: relative;
+         left: 70px;
+        width: 1200px;
+        height: 40vh;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: flex;
+      }
+
+      .imgi {
+        display: block;
+        width: 200px;
+        height: 50px;
+        position: relative;
+        top: 190px;
+        left: 100px;
+      }
+      .swipe-block{
+         position: relative;
+         bottom: 600px;
+         height: 150px;
+         width: 100%;
+      }  
+      
+      /* .imgi{
+         width: 100px;
+         height: 80px;
+      } */
+      /* .swiper-slide {
+         font-size: 18px;
+         background: aqua;
+      }*/
+
+      .imgo {
+         width: 70px;
+         height: 70px;
+         position: relative;
+         left: 20px;
+         top: 20px;
+      } 
+   </style>
+</head>
+
+<body>
+   <div class="wrapper__container">
+      <aside>
+         <div style=" height: 350px; padding-top: 10px;">
+            <div class="block_logo">
+               <img src="./assets/logo/logo.svg">
+            </div>
+            <div class="block_tabs">
+               <a href="./overwiev.html" class="tab">
+                  <img src="./assets/icons/Overview.svg">
+                  <span>Overview</span>
+               </a>
+               <a href="#" class="tab">
+                  <img src="./assets/icons/Wallets.svg">
+                  <span>Wallets</span>
+               </a>
+               <a href="#" class="tab">
+                  <img src="./assets/icons/Transictions.svg">
+                  <span>Transictions</span>
+               </a>
+               <a href="./index.html" class="tab">
+                  <img src="./assets/icons/Exchange.svg">
+                  <span>Exchange</span>
+               </a>
+               <a href="./market.html" class="tab"
+                  style="background-color:  #32395E; border-bottom: 2px solid #1288e8;">
+                  <img src="./assets/icons/market.svg">
+                  <span style="color: #FFFFFF;">Market</span>
+               </a>
+            </div>
+         </div>
+
+         <div class="block_log_out">
+            <div class="log_out">
+               <img src="./assets/icons/circle.svg">
+               <span>Mike Jakson</span>
+            </div>
+            <div class="log_out">
+               <img src="./assets/icons/log out.svg">
+               <span>Log out</span>
+            </div>
+         </div>
+      </aside>
+      <main>
+         <header>
+            <div class="header_left">
+               <div class="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <input type="text">
+               <img src="./assets/icons/search.svg">
+            </div>
+            <div class="header_right">
+               <img src="./assets/icons/folder.svg">
+               <img src="./assets/icons/Bell.svg">
+            </div>
+   </div>
+   </header>
+   </div>
+   </main>
+   </div>
+
+
+
+
+
+
+   <!-- Swiper -->
+
+
+   <div class="swipe-block">
+      <div class="swiper mySwiper">
+         <div class="swiper-wrapper">
+   
+         </div>
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-pagination"></div>
+       </div>
+   </div>
+
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       slidesPerView: 3,
+       spaceBetween: 30,
+       slidesPerGroup: 3,
+       loop: true,
+       loopFillGroupWithBlank: true,
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
+   <script src="./js/chart.js"></script>
+
+</body>
+</html>
+
+<!-- <div class="myChart">
+   <canvas id="myChart"></canvas>
+</div> -->
